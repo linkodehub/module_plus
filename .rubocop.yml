@@ -1,0 +1,29 @@
+
+AllCops:
+  Include:
+    - 'Gemfile'
+  Exclude:
+    - 'bin/**/*'
+    - 'vender/**/*'
+    - 'spec/**/*'
+
+FileName:
+  Exclude:
+    - '**/Rakefile'
+    - '**/Gemfile'
+
+# Use UTF-8 as the source file encoding.
+Encoding:
+  Enabled: false
+
+#
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+#
+Style/Documentation:
+  Enabled: false
+
+#
+Style/RedundantSelf:
+  Enabled: false

@@ -1,28 +1,30 @@
 # coding: utf-8
+
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'module_plus/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "module_plus"
+  spec.name          = 'module_plus'
   spec.version       = ModulePlus::VERSION
-  spec.authors       = ["satoyama"]
-  spec.email         = ["satoyama@linkode.co.jp"]
+  spec.authors       = ['satoyama']
+  spec.email         = ['satoyama@linkode.co.jp']
 
-  spec.summary       = %q{Module + Utilities}
-  spec.description   = %q{To include/extend utilites for ruby Module}
-  spec.homepage      = "https://www.linkode.co.jp/"
-  spec.license       = "MIT"
-
+  spec.summary       = 'Module + Utilities'
+  spec.description   = 'To include/extend utilites for ruby "Module".'
+  spec.homepage      = 'https://www.linkode.co.jp/'
+  spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
-  spec.bindir        = "exe"
+  spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
+  spec.require_paths = ['lib']
 
-  spec.add_development_dependency "bundler", "~> 1.14"
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency 'bundler', '~> 1.14'
+  spec.add_development_dependency 'pry'
+  spec.add_development_dependency 'rake', '~> 10.0'
+  spec.add_development_dependency 'rspec', '~> 3.0'
+  spec.add_development_dependency 'rubocop'
 end
