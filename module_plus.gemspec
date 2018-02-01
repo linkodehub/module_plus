@@ -11,8 +11,8 @@ Gem::Specification.new do |spec|
   spec.email         = ['satoyama@linkode.co.jp']
 
   spec.summary       = 'Module + Utilities'
-  spec.description   = 'To include/extend utilites for ruby "Module".'
-  spec.homepage      = 'https://www.linkode.co.jp/'
+  spec.description   = 'To include/extend utilites for ruby "Module" or "Class".'
+  spec.homepage      = 'https://github.com/linkodehub/module_plus'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
